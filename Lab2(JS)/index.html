@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@500&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <title>Главная страница</title>
+    <script src="js/weather.js" defer></script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class = 'menu-container'>
+            <a href="index.html">Главная </a>
+            <a href="catalog.html">Каталог</a>
+            <a href="profile.html">Личный кабинет</a>
+        </div>
+        <!--Center logo-->
+        <a href="index.html" class="logo-link">
+            <img src="./img/logo.png" alt="Логотип" class="logo"/>
+        </a>
+        <!-- Right element cart-->
+        <a href="cart.html" class="cart-link">Корзина</a>
+    </nav>
+</header>
+<main>
+    <section class="image-container" data-aos="fade-up">
+        <img src="./img/bathroom.png" alt="Интерьер ванной комнаты" class='main-image'>
+    </section>
+    <section class="catalog-container" data-aos="fade-up">
+        <h1 class='index-title'>Каталог</h1>
+        <div class="product-grid">
+            <!-- Продукты с анимацией -->
+            <div class="product-item" data-aos="fade-right">
+                <img src="./img/bathroom.png" alt="Ванная">
+                <h2>Ванная</h2>
+                <p>150000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+            <div class="product-item" data-aos="fade-right" data-aos-delay="100">
+                <img src="./img/1.png" alt="Диван">
+                <h2>Диван</h2>
+                <p>20000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+            <div class="product-item" data-aos="fade-left" data-aos-delay="100">
+                <img src="./img/1.png" alt="Диван">
+                <h2>Диван</h2>
+                <p>20000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+            <div class="product-item" data-aos="fade-right" data-aos-delay="100">
+                <img src="./img/1.png" alt="Диван">
+                <h2>Диван</h2>
+                <p>20000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+            <div class="product-item" data-aos="fade-left" data-aos-delay="100">
+                <img src="./img/1.png" alt="Диван">
+                <h2>Диван</h2>
+                <p>20000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+            <div class="product-item" data-aos="fade-left" data-aos-delay="100">
+                <img src="./img/1.png" alt="Диван">
+                <h2>Диван</h2>
+                <p>20000 RUB</p>
+                <button type="button" class="add-to-cart-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Информация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Покупателям</h4>
+            <ul>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Связь с нами</h4>
+            <p>+7(777)777-77-77</p>
+            <p>sampletext@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-decoration">
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div id="weather-widget">
+        <h3>Погода в вашем городе</h3>
+        <div id="weather-data"></div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

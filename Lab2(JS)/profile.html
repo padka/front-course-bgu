@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменен атрибут lang на "ru", так как содержимое сайта на русском языке -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Вход в систему</title> <!-- Изменено название для точности -->
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="menu-container">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="profile.html">Личный кабинет</a>
+        </div>
+        <!-- Логотип в центре -->
+        <a href="index.html" class="logo-link">
+            <img src="./img/logo.png" alt="Логотип" class="logo"/>
+        </a>
+        <!-- Ссылка на корзину справа -->
+        <a href="cart.html" class="cart-link">Корзина</a>
+    </nav>
+</header>
+<main class="log-in">
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Вход в систему</h2>
+            <input type="text" placeholder="Имя пользователя*" class="User" required aria-required="true">
+            <input type="password" placeholder="Пароль*" class="Pass" required aria-required="true">
+            <button type='submit' class="login-btn">Войти</button>
+            <div class="loading" style="display:none;">Загрузка...</div>
+            <div class="success-message" style="display:none; color: green;">Вы успешно вошли в систему!</div>
+            <a href="#" class='links'>Забыли пароль?</a>
+            <a href="#" class='links'>Регистрация</a>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Информация</h4>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Покупателям</h4>
+            <ul>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Связь с нами</h4>
+            <p>+7(777)777-77-77</p>
+            <p>sampletext@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-decoration">
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</footer>
+</body>
+</html>
