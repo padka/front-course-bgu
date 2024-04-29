@@ -1,0 +1,80 @@
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-section h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: calc(33.333% - 20px);
+  height: 300px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Добавлены эффекты перехода */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+  filter: grayscale(70%);
+}
+
+.image-container:hover img {
+  filter: grayscale(0%);
+}
+
+.image-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличенный box-shadow при наведении */
+  transform: translateY(-5px); /* Слегка поднимаем карточку при наведении */
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 15px; /* Увеличенный отступ */
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .image-text {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 100%;
+  }
+}

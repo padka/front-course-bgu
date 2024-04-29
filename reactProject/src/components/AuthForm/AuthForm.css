@@ -1,0 +1,108 @@
+.auth-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.auth-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Улучшенная тень для всей формы */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-form-button {
+  background-color: #d1a782;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Убрано 'all' для оптимизации только цвета фона */
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.auth-form-button:hover {
+  background-color: #c28752;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none; /* Убрана граница */
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); /* Добавлено углубление для инпутов */
+}
+
+.auth-form-options button,
+.auth-form-options a { /* Изменено, чтобы включить элементы a */
+  background: none;
+  border: none;
+  color: #333; /* Цвет текста ссылок */
+  text-decoration: none; /* Убирает подчеркивание */
+  cursor: pointer;
+}
+
+.auth-form-options button:hover,
+.auth-form-options a:hover { /* Изменено, чтобы включить элементы a */
+  color: #555; /* Цвет текста ссылок при наведении */
+}
+
+
+.auth-form-button {
+  background-color: #d1a782; /* Базовый цвет кнопки */
+  background-image: linear-gradient(to top, #d1a782, #e8c3a3); /* Градиент для создания эффекта глубины */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для создания эффекта объема */
+}
+
+.auth-form-button:hover {
+  background-color: #c28752; /* Светлее при наведении */
+  background-image: linear-gradient(to top, #c28752, #d7b29d); /* Градиент изменяется при наведении */
+  transform: translateY(-2px); /* Поднимаем кнопку немного вверх при наведении */
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.25); /* Увеличиваем тень для создания эффекта приподнятости */
+}
+
+.auth-form-button:active {
+  transform: translateY(1px); /* Возвращаем кнопку немного вниз при нажатии */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15); /* Уменьшаем тень для имитации нажатия */
+}
+
+
+.alert {
+  margin-top: 1rem;
+  padding: .75rem 1.25rem;
+  border-radius: .25rem;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}

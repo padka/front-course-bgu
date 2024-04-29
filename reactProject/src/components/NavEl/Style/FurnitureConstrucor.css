@@ -59,6 +59,59 @@
         padding: 30px; /* Increased padding for larger screens */
     }
 }
+/* Добавленные или обновленные стили */
+.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    color: #dc3545;
+    transform: scale(1.1);
+}
+
+.btn-order {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.order-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    animation: slideIn 0.5s, fadeOut 2.5s 2.5s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
 
 @media (min-width: 992px) {
     .dimension-sliders, .material-selector {
