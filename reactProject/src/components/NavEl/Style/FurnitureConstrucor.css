@@ -1,0 +1,80 @@
+/* FurnitureConstructor.css */
+.furniture-constructor {
+    /* Padding and margin adjustments for smaller screens */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.constructor-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures no additional space below the image */
+}
+
+.settings {
+    background-color: #f8f9fa; /* Light grey background for the settings panel */
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px; /* Adds space between the image and the settings on mobile view */
+}
+
+.dimension-sliders, .material-selector {
+    margin-bottom: 20px;
+}
+
+.slider label, .material-selector label {
+    display: block;
+    font-weight: 600; /* Makes label text bold */
+    margin-bottom: 10px;
+}
+
+.slider input[type="range"], .material-selector select {
+    width: 100%; /* Ensures full width on small screens */
+}
+
+.material-selector select {
+    padding: 0.5rem 1rem; /* Comfortable padding for easy interaction */
+    border-radius: 5px; /* Rounded corners for the select box */
+    border: 1px solid #ced4da; /* Border color that matches with bootstrap's default form elements */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .constructor-layout {
+        flex-direction: row;
+    }
+
+    .product-image, .settings {
+        flex: 1; /* Each section takes up an equal amount of space */
+    }
+
+    .settings {
+        margin-top: 0; /* Reset top margin for non-mobile views */
+        margin-left: 30px; /* Adds space between the image and the settings */
+        padding: 30px; /* Increased padding for larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .dimension-sliders, .material-selector {
+        margin-bottom: 30px;
+    }
+
+    .material-selector select {
+        padding: 0.75rem 1.5rem; /* Larger padding for larger screens */
+    }
+}
+
+/* Transition effects for interactive elements */
+.slider input[type="range"], .material-selector select {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.slider input[type="range"]:hover, .material-selector select:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); /* Subtle shadow effect on hover */
+}
